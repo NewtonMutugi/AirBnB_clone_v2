@@ -36,9 +36,8 @@ def display_python(text="is_cool"):
 @app.route('/number/<int:n>')
 def display_number(n):
     """ Number """
-    return n + " is a number"
+    return "{} is a number".format(n)
 
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
-
