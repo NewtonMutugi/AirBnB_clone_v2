@@ -39,7 +39,7 @@ def display_number(n):
     return "{} is a number".format(n)
 
 
-@app.route('/number_template/<n>')
+@app.route('/number_template/<int:n>')
 def display_template_number(n):
     return render_template('5-number.html', number=n)
 
