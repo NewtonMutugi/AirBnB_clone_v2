@@ -24,11 +24,12 @@ def display_text(text):
     """ C """
     return "C " + text.replace('_', ' ')
 
-
+@app.route('/python/')
 @app.route('/python/<text>')
-def display_python(text):
+def display_python(text="is_cool"):
     """ Python"""
-    return "Python " + text.replace('_', ' ')
+    if (text != ""):
+        return "Python " + text.replace('_', ' ')
 
 
 if __name__ == "__main__":
