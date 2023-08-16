@@ -3,6 +3,7 @@
 from os import getenv
 import shlex
 import models
+from models.amenity import Amenity
 from models.base_model import Base, BaseModel
 from sqlalchemy import Column, Float, Integer, String, ForeignKey, Table
 from sqlalchemy.orm import relationship
