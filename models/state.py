@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import shlex
 from models.base_model import BaseModel, Base
 from sqlalchemy import Column, String, ForeignKey
